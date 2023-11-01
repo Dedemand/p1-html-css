@@ -1,45 +1,38 @@
-/* Voeg deze CSS toe aan je style.css-bestand */
-
-body {
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #333;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 10px;
-    background-color: hsla(190, 100%, 57%, 0.837); /* Achtergrondkleur van de pagina */
   }
   
-  form {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fcffa171; /* Achtergrondkleur van het formulier */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
   }
   
-  label {
-    display: block;
-    margin-top: 10px;
-    color: #333; /* Tekstkleur van labels */
+  th {
+    background-color: #007bff;
+    color: #fff;
   }
   
-  input,
-  select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc; /* Rand om invoervelden */
-    border-radius: 5px;
+  td:first-child {
+    width: 60px; /* Breedte van de eerste kolom (voor de afbeeldingen) */
+    text-align: left;
+    padding-left: 10px;
   }
   
-  input[type="submit"] {
-    background-color: #007bff; /* Achtergrondkleur van de verzendknop */
-    color: #fff; /* Tekstkleur van de verzendknop */
-    cursor: pointer;
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  tr:hover {
+    background-color: #e0e0e0;
     transition: background-color 0.3s;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #0056b3; /* Achtergrondkleur van de verzendknop bij hover */
   }
   
